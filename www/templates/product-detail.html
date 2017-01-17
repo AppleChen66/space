@@ -1,0 +1,28 @@
+<ion-view view-title="{{product.name}}">
+  <ion-content class="padding">
+    <div>
+      <img ng-src="{{product.picture}}"  style="width:100%;">
+    </div>
+    <div style="border-bottom: 4px solid #ccc">
+      <p>
+        {{product.content}}
+      </p>
+    </div>
+    <div>
+      <h3>方案一</h3>
+      <div class="row" ng-repeat="plan in plans" ng-show="$index%2==0">
+        <div class="col" ng-if="$index%2==0">
+          <a href="#/tab/productPlan/{{plans[$index]['id']}}">
+            <img ng-src="{{plans[$index]['picture']}}" style="width: 100%">
+          </a>
+        </div>
+        <div class="col" ng-if="$index%2==0&&$index+1<=plans.length">
+          <a href="#/tab/productPlan/{{plans[$index+1]['id']}}">
+            <img ng-src="{{plans[$index+1]['picture']}}" style="width: 100%">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

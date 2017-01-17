@@ -8,7 +8,7 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
-  console.log("HelloWorld")
+  // console.log("HelloWorld")
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -97,7 +97,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+    .state('tab.product-detail', {
+      url: '/productList/:productId',
+      views: {
+        'tab-productList': {
+          templateUrl: 'templates/product-detail.html',
+          controller: 'ProductDetailCtrl'
+        }
+      }
+    })
+    .state('tab.productPlan', {
+      url: '/productPlan/:planId',
+      views: {
+        'tab-productList': {
+          templateUrl: 'templates/product-plan.html',
+          controller: 'ProductPlanCtrl'
+        }
+      }
+    })
 
 
 

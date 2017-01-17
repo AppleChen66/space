@@ -1,9 +1,16 @@
 <ion-view view-title="产品列表页">
   <ion-content>
 
-    <div class="row">
-      <div class="col col-50"  ng-repeat="product in products">
-        <a href=""><img ng-src="{{product.picture}}" style="width: 100%"></a>
+    <div class="row" ng-repeat="product in products" ng-show="$index%2==0">
+      <div class="col" ng-if="$index%2==0">
+        <a href="#/tab/productList/{{products[$index]['id']}}">
+          <img ng-src="{{products[$index]['picture']}}" style="width: 100%">
+        </a>
+      </div>
+      <div class="col" ng-if="$index%2==0&&$index+1<=products.length">
+        <a href="#/tab/productList/{{products[$index+1]['id']}}">
+          <img ng-src="{{products[$index+1]['picture']}}" style="width: 100%">
+        </a>
       </div>
     </div>
 
