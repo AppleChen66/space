@@ -10,30 +10,7 @@
     "name": "温馨大床",
     "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
     "picture": "img/bed.jpg"
-  },
-  {
-    "id": "2",
-    "name": "温馨大床",
-    "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-    "picture": "img/bed.jpg"
-  },
-  {
-    "id": "3",
-    "name": "温馨大床",
-    "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-    "picture": "img/bed.jpg"
-  },
-  {
-    "id": "4",
-    "name": "温馨大床",
-    "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-    "picture": "img/bed.jpg"
-  },
-  {
-    "id": "5",
-    "name": "温馨大床",
-    "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-    "picture": "img/bed.jpg"
   }
-]
+],
+  "status":"success"
 }

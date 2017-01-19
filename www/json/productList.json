@@ -16,25 +16,24 @@
       "name": "浪漫屋",
       "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
       "picture": "img/bedroom.jpg"
-   }
-      //    ,
-//    {
-//      "id": "3",
-//      "name": "浪漫屋",
-//      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-//      "picture": "img/bedroom.jpg"
-//    },
-//    {
-//      "id": "4",
-//      "name": "浪漫屋",
-//      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-//      "picture": "img/bedroom.jpg"
-//    },
-//    {
-//      "id": "5",
-//      "name": "浪漫屋",
-//      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
-//      "picture": "img/bedroom.jpg"
-//    }
+   },
+    {
+      "id": "3",
+      "name": "浪漫屋",
+      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
+      "picture": "img/bedroom.jpg"
+    },
+    {
+      "id": "4",
+      "name": "浪漫屋",
+      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
+      "picture": "img/bedroom.jpg"
+    },
+    {
+      "id": "5",
+      "name": "浪漫屋",
+      "content": "浪漫有精美的雕刻风格,洗白的色泽下勾勒的是罗密欧与朱丽叶的故事",
+      "picture": "img/bedroom.jpg"
+    }
   ]
 }
