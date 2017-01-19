@@ -30,20 +30,43 @@ angular.module('starter.controllers', [])
   // .controller('ProductDetailCtrl', function ($scope, $stateParams, ProductsService,PlanService) {
   //   $scope.product = ProductsService.get($stateParams.productId);
   // })
-  .controller('ProductDetailCtrl', function ($scope, $stateParams, ProductsService) {
+  .controller('ProductDetailCtrl', function ($scope, $stateParams, ProductsService,$ionicPopup) {
     ProductsService.get($stateParams.productId).then(
       function (data) {
         $scope.product=data ;
       }
     )
+    $scope.collect = function () {
+      ProductsService.addcollect($stateParams.productId).then(
+        function (data) {
+          if(data=="success"){
+            $scope.Alert();
+          }else{
+
+          }
+        }
+      )
+    }
+    $scope.Alert = function () {
+      var alertPopup = $ionicPopup.alert({
+        // title: 'Don\'t eat that!',
+        template: '收藏成功！'
+      });
+      alertPopup.then(function(res) {
+      });
+    }
+
+
+      // };
+
     ProductsService.getPlan().then(
       function (data) {
         $scope.plans = data;
       }
     )
   })
-  .controller('ProductPlanCtrl', function ($scope, $stateParams, ProductsService) {
-    PlanService.get($stateParams.plantId).then(
+  .controller('ProductPlanCtrl', function ($scope, $stateParams, PlanService) {
+    PlanService.get($stateParams.planId).then(
       function (data) {
         $scope.plan=data ;
       }
