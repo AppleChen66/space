@@ -1,7 +1,12 @@
-<ion-view view-title="one">
-  <!--<ion-content class="padding">-->
-  <p>
-    This is test.
-  </p>
-  <!--</ion-content>-->
+<ion-view view-title="{{plan.name}}">
+  <ion-content class="padding">
+    <div>
+      <img ng-src="{{plan.picture}}" style="width:100%;">
+    </div>
+    <div>
+      <p>
+        {{plan.content}}
+      </p>
+    </div>
+  </ion-content>
 </ion-view>

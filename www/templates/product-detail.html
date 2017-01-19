@@ -1,7 +1,10 @@
 <ion-view view-title="{{product.name}}">
   <ion-content class="padding">
-    <div>
+    <div style="position: relative">
       <img ng-src="{{product.picture}}"  style="width:100%;">
+      <div style="position: absolute;right:0;bottom: 0;">
+        <button class="button "style="background-image:url('img/collect.png') "ng-click="collect()"></button>
+      </div>
     </div>
     <div style="border-bottom: 4px solid #ccc">
       <p>
