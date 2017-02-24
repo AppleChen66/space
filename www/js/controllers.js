@@ -73,7 +73,11 @@ angular.module('starter.controllers', [])
     )
   })
 
-
+function ContentController($scope, $ionicSideMenuDelegate) {
+  $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+}
 
 
 
